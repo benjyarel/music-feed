@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
+echo "➜  App:  http://localhost:3000"
+echo "➜  Vite: http://localhost:3036 (HMR, connects automatically from the app)"
+echo ""
+
 exec bundle exec foreman start -f Procfile.dev "$@"

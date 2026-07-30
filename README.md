@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Development
 
-Things you may want to cover:
+```
+bin/dev
+```
 
-* Ruby version
+Starts Rails and Vite together (via [foreman](https://github.com/ddollar/foreman) and `Procfile.dev`), then connect at:
 
-* System dependencies
+- App: http://localhost:3000
+- Vite (HMR): http://localhost:3036 — no need to open it directly, the app connects to it automatically.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Don't run `bin/rails s` on its own: Hot Module Replacement (React Fast Refresh) won't work without the Vite server.
