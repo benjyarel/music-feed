@@ -57,6 +57,9 @@ group :development do
 
   # Run Rails and Vite dev servers together [https://github.com/ddollar/foreman]
   gem "foreman"
+
+  # Language server powering RuboCop diagnostics/formatting in editors [https://github.com/Shopify/ruby-lsp]
+  gem "ruby-lsp", require: false
 end
 
 group :test do
