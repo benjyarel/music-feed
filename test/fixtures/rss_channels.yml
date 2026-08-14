@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: " A nice music feed"
+  url: "https://example.com/feed1"
+  lang: "fr-Fr"
+
+two:
+  title: "A music blog"
+  url: "https://example.com/feed2"
+  lang: "fr-Fr"
