@@ -8,4 +8,4 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-    RssChannel.find_or_create_by!(title: "Les Inrocks - musique", url: "https://www.lesinrocks.com/musique/feed/", lang: "fr-Fr")
+RssChannel.find_or_create_by!(title: "Les Inrocks - musique", url: "https://www.lesinrocks.com/musique/feed/", lang: "fr-Fr")
