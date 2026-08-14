@@ -7,4 +7,3 @@ class SpaController < ApplicationController
     raise
   end
 end
- 

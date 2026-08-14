@@ -1,7 +1,6 @@
 require "test_helper"
 
 class RssChannelTest < ActiveSupport::TestCase
-
   test " a RSS channel must have a title" do
     rss_channel = RssChannel.new(url: "https://www.test.com/feed", lang: "fr-Fr")
     assert_not rss_channel.valid?
@@ -16,6 +15,4 @@ class RssChannelTest < ActiveSupport::TestCase
     rss_channel = RssChannel.new(title: "A duplicate", url: RssChannel.first.url, lang: "fr-Fr")
     assert_not rss_channel.valid?
   end
-
-
 end

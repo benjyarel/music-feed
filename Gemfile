@@ -34,7 +34,8 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 2.0"
+gem "ruby-vips", "~> 2.0"
 
 # Parse RSS/Atom feeds [https://github.com/feedjira/feedjira]
 gem "feedjira"
@@ -59,6 +60,9 @@ group :development do
 
   # Run Rails and Vite dev servers together [https://github.com/ddollar/foreman]
   gem "foreman"
+
+  # Language server powering RuboCop diagnostics/formatting in editors [https://github.com/Shopify/ruby-lsp]
+  gem "ruby-lsp", require: false
 end
 
 group :test do
